@@ -1,0 +1,163 @@
+<!-- HTML & CSS Assignment - facebook_akshay.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- link to CSS -->
+    <link rel="stylesheet" href="assingment2.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <!-- Header Logo -->
+        <div id="headerLogo">
+            facebook
+        </div>
+
+        <!-- Log In Form -->
+        <div class="logInForm">
+                    <!-- Applied a few inline styles here -->
+            <!-- First Block  -->
+            <div id="logInFormBlock1">
+                <label for="emailOrPhone" style="color: white;">Email or Phone</label>    <br> 
+                <input type="text" id="emailOrPhone" name="emailOrPhone">   <br>
+                <input type="checkbox" id="keepMeLoggedIn" name="keepMeLoggedIn">
+                <label for="keepMeLoggedIn" style="color: #A5A4EC;"> Keep me logged in</label>  <br>
+            </div>
+
+            <!-- Second Block -->
+            <div id="logInFormBlock2">
+                <label for="password" style="color: white;">Password</label>  <br>
+                <input type="password" id="password" name="password">   <br>
+                <a href="#" id="forgotPassword"> Forgot your password? </a>
+            </div>
+
+            <!-- Third Block -->
+            <div id="logInFormBlock3">
+                <br>
+                <input type="button" value="Log In" id="logInButton">
+                <br><br>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+
+        <!-- Left Half -->
+        <div class="mainLeftHalf">
+            <!-- Different Headings -->
+            <div class="heading2">Connect with friends and the world around you on Facebook.</div>
+            <br>
+            <div class="heading4">See photos and updates</div>
+            <br>
+            <div class="heading4">Share what's new</div>
+            <br>
+            <div class="heading4">Find more</div>
+            <br>
+        </div>
+
+        <!-- Right Half -->
+        <div class="mainRightHalf">
+            <br>
+
+            <!-- Sign Up Heading-->
+            <div class="heading1"> Sign Up</div>
+            <br>
+            <div class="heading2">It's free and always will be.</div>
+            <br>
+
+            <!-- Sign Up Form -->
+            <form class="signUpForm">
+
+                <!-- First & Last name, Email or Phone and Password -->
+                <!-- First and Last Name -->
+                <input type="text" name="firstName" placeholder="First name" id="signUpFirstName">
+                <input type="text" name="lastName" placeholder="Last Name" id="signUpLastName">
+                <br>
+                <!-- Email Or Phone -->
+                <input type="text" name="emailOrMobileNumber" placeholder="Email or mobile number" id="signUpEmailOrMobile">
+                <br>
+                <input type="text" name="reenterEmailOrMobileNumber" placeholder="Re-enter email or mobile number" id="signUpReenterEmailOrMobile">
+                <br>
+                <!-- Password -->
+                <input type="password" name="newPassword" placeholder="New password" id="signUpNewPassword">
+                <br><br>
+
+                <!-- Birthday -->
+                <div class="">Birthday</div>
+
+                    <!-- Birthday Form -->
+
+                    <!--  Month -->
+                    <select name="birthMonth" id="birthMonth">
+                        <option value="month">Month</option>
+                        <option value="jan">January</option>
+
+                    </select>
+                    
+                    <!-- Date -->
+                    <select name="birthDate" id="birthDate">
+                        <option value="day">Day</option>
+                        <option value="1">1</option>
+
+                    </select>
+                    
+                    <!-- Year -->
+                    <select name="birthYear" id="birthYear">
+                        <option value="year">Year</option>
+                        <option value="1991">1991</option>
+
+                    </select>
+
+                    <!-- link - Why to provide birthday -->
+                    &nbsp;
+                    <a href="#" id="whyToProvideBirthday">Why do I need to provide my birthday?</a>
+
+                    <!-- Gender  -->
+                    <br><br>
+                    <form >
+                        <!-- female -->
+                        <input type="radio" name="gender" id="female" value="Female">
+                        <label for="female">Female</label>
+                        &nbsp; &nbsp;
+                        <!-- male -->
+                        <input type="radio" name="gender" id="male" value="Male">
+                        <label for="male">Male</label>
+                    </form>
+            </form>
+            <br>
+
+            <!-- Terms and Conditions -->
+            <div id="termsAndConditions">
+                By clicking Sign Up, you agree to our
+                    <a href="#">Terms</a>
+                and that you have read our
+                    <a href="#">Data Use Policy,</a>
+                including our
+                    <a href="#">Cookie Use.</a>
+            </div>
+            <br>
+
+            <!-- Sign Up Button -->
+            <input type="button" value="Sign Up" id="signUpButton">
+            <br><br>    
+                <hr>
+            <br>
+
+            <!-- Create a Page -->
+            <div>
+                    <a href="#" id="createAPage">Create a Page</a>
+                for a celebrity, band or business.
+            </div>
+
+            <!-- end -->
+        </div> <!-- for right half-->
+    </div> <!--for main-->
+
+</body>
+</html>
