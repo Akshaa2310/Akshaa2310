@@ -7,36 +7,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <!-- link to CSS -->
-    <link rel="stylesheet" href="assingment2.css">
+    <style>
+        
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #DFE1EE;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: #3B5998;
+}
+
+
+#headerLogo {
+    display: inline-block;
+
+    position: absolute;
+    top: 20px;
+    left: 100px;
+
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+
+
+.logInForm {
+    display: inline-block;
+
+    position: absolute;
+    top: 20px;
+    right: 100px;
+}
+
+
+#logInFormBlock1, #logInFormBlock2, #logInFormBlock3 {
+    display: inline-block;
+}
+
+#forgotPassword {
+    text-decoration: none;
+    color: #A5A4EC;
+}
+        
+#logInButton {
+    width: 50px;
+    background-color: #7C7BB9;
+    color: white;
+}
+
+
+/* main left half */
+.mainLeftHalf {
+    width: 49vw;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    float: left;
+}
+
+.heading1, .heading2, .heading3, .heading4, .heading5, .heading6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.heading1 {
+    font-size: 30px;
+}
+
+.mainLeftHalf .heading2 {
+    width: 80%;
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.mainLeftHalf .heading4 {
+    text-align: center;
+}
+
+
+.mainRightHalf {
+    width: 49vw;
+
+    float: right;
+}
+
+.signUpForm input[type=text], .signUpForm input[type=password], select {
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid #CCC;
+}
+#signUpFirstName, #signUpLastName {
+    width: 43%;
+}
+
+#signUpEmailOrMobile,  #signUpReenterEmailOrMobile, #signUpNewPassword {
+    width: 90%;
+}
+
+#whyToProvideBirthday {
+    text-decoration: none;
+    color: #7654C4;
+}
+#termsAndConditions {
+    color: grey;
+}
+
+#termsAndConditions a {
+    text-decoration: none;
+}
+
+#signUpButton {
+    margin:5px 0;
+    padding: 5px 50px;
+    background-color: olivedrab;
+    color: white;
+    border-radius: 5px;
+}
+#createAPage {
+    text-decoration: none;
+}
+    </style>
+    
 </head>
 <body>
-    <!-- Header -->
     <div class="header">
-        <!-- Header Logo -->
         <div id="headerLogo">
             facebook
         </div>
-
-        <!-- Log In Form -->
         <div class="logInForm">
-                    <!-- Applied a few inline styles here -->
-            <!-- First Block  -->
             <div id="logInFormBlock1">
                 <label for="emailOrPhone" style="color: white;">Email or Phone</label>    <br> 
                 <input type="text" id="emailOrPhone" name="emailOrPhone">   <br>
                 <input type="checkbox" id="keepMeLoggedIn" name="keepMeLoggedIn">
                 <label for="keepMeLoggedIn" style="color: #A5A4EC;"> Keep me logged in</label>  <br>
             </div>
-
-            <!-- Second Block -->
             <div id="logInFormBlock2">
                 <label for="password" style="color: white;">Password</label>  <br>
                 <input type="password" id="password" name="password">   <br>
                 <a href="#" id="forgotPassword"> Forgot your password? </a>
             </div>
 
-            <!-- Third Block -->
             <div id="logInFormBlock3">
                 <br>
                 <input type="button" value="Log In" id="logInButton">
@@ -44,13 +163,10 @@
             </div>
         </div>
     </div>
-
-    <!-- Main -->
     <div class="main">
 
-        <!-- Left Half -->
         <div class="mainLeftHalf">
-            <!-- Different Headings -->
+        
             <div class="heading2">Connect with friends and the world around you on Facebook.</div>
             <br>
             <div class="heading4">See photos and updates</div>
@@ -61,78 +177,66 @@
             <br>
         </div>
 
-        <!-- Right Half -->
+        
         <div class="mainRightHalf">
             <br>
 
-            <!-- Sign Up Heading-->
+        
             <div class="heading1"> Sign Up</div>
             <br>
             <div class="heading2">It's free and always will be.</div>
             <br>
 
-            <!-- Sign Up Form -->
+            
             <form class="signUpForm">
 
-                <!-- First & Last name, Email or Phone and Password -->
-                <!-- First and Last Name -->
+              
                 <input type="text" name="firstName" placeholder="First name" id="signUpFirstName">
                 <input type="text" name="lastName" placeholder="Last Name" id="signUpLastName">
                 <br>
-                <!-- Email Or Phone -->
+            
                 <input type="text" name="emailOrMobileNumber" placeholder="Email or mobile number" id="signUpEmailOrMobile">
                 <br>
                 <input type="text" name="reenterEmailOrMobileNumber" placeholder="Re-enter email or mobile number" id="signUpReenterEmailOrMobile">
                 <br>
-                <!-- Password -->
+
                 <input type="password" name="newPassword" placeholder="New password" id="signUpNewPassword">
                 <br><br>
 
-                <!-- Birthday -->
+                
                 <div class="">Birthday</div>
-
-                    <!-- Birthday Form -->
-
-                    <!--  Month -->
                     <select name="birthMonth" id="birthMonth">
                         <option value="month">Month</option>
                         <option value="jan">January</option>
 
                     </select>
-                    
-                    <!-- Date -->
+ 
                     <select name="birthDate" id="birthDate">
                         <option value="day">Day</option>
                         <option value="1">1</option>
 
                     </select>
-                    
-                    <!-- Year -->
                     <select name="birthYear" id="birthYear">
                         <option value="year">Year</option>
                         <option value="1991">1991</option>
 
                     </select>
-
-                    <!-- link - Why to provide birthday -->
                     &nbsp;
                     <a href="#" id="whyToProvideBirthday">Why do I need to provide my birthday?</a>
 
-                    <!-- Gender  -->
+                 
                     <br><br>
-                    <form >
-                        <!-- female -->
+                    <form > 
                         <input type="radio" name="gender" id="female" value="Female">
                         <label for="female">Female</label>
                         &nbsp; &nbsp;
-                        <!-- male -->
+                       
                         <input type="radio" name="gender" id="male" value="Male">
                         <label for="male">Male</label>
                     </form>
             </form>
             <br>
 
-            <!-- Terms and Conditions -->
             <div id="termsAndConditions">
                 By clicking Sign Up, you agree to our
                     <a href="#">Terms</a>
@@ -143,21 +247,21 @@
             </div>
             <br>
 
-            <!-- Sign Up Button -->
+            
             <input type="button" value="Sign Up" id="signUpButton">
             <br><br>    
                 <hr>
             <br>
 
-            <!-- Create a Page -->
+          
             <div>
                     <a href="#" id="createAPage">Create a Page</a>
                 for a celebrity, band or business.
             </div>
 
-            <!-- end -->
-        </div> <!-- for right half-->
-    </div> <!--for main-->
+            
+        </div> 
+    </div> 
 
 </body>
 </html>
